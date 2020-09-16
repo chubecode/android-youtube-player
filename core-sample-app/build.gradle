@@ -10,6 +10,7 @@ android {
         targetSdkVersion versions.compileSdk
         versionCode versions.publishVersionCode_core
         versionName versions.publishVersion_core
+        vectorDrawables.useSupportLibrary = true
     }
 
     buildTypes {
@@ -62,6 +63,8 @@ dependencies {
     }
 
     implementation "com.psoffritti.librarysampleapptemplate:core:$versions.sampleAppTemplate"
+
+    implementation 'com.github.shts:StoriesProgressView:3.0.0'
 }
 
 /*
